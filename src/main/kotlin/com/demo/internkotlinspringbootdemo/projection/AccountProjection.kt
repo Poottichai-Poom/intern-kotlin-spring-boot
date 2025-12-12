@@ -1,11 +1,13 @@
 package com.demo.internkotlinspringbootdemo.projection
 
+import org.springframework.beans.factory.annotation.Value
 import java.util.UUID
 
 interface AccountProjection {
     fun getId(): UUID?
     fun getFirstName(): String
     fun getLastName(): String
-    // Method ที่ใช้คำนวณ Full Name
-    fun getFullName(): String = "${getFirstName()} ${getLastName()}"
+
+    @Value("#{target.firstName + ' ' + target.lastName}")
+    fun getFullName(): String
 }
