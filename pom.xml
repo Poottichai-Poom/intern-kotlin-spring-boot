@@ -80,6 +80,7 @@
 				<configuration>
 					<compilerPlugins>
 						<plugin>jpa</plugin>
+						<plugin>spring</plugin>
 					</compilerPlugins>
 				</configuration>
 

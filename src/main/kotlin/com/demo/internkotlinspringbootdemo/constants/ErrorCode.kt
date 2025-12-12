@@ -1,4 +1,4 @@
-package com.demo.internkotlinspringbootdemo.entity
+package com.demo.internkotlinspringbootdemo.constants
 
 enum class ErrorCode(
     val code: String,

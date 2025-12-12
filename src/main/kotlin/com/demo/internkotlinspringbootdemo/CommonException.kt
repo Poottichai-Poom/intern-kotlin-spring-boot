@@ -1,6 +1,6 @@
 package com.demo.internkotlinspringbootdemo
 
-import com.demo.internkotlinspringbootdemo.entity.ErrorCode
+import com.demo.internkotlinspringbootdemo.constants.ErrorCode
 
 class CommonException(
     val errorCode: ErrorCode,
