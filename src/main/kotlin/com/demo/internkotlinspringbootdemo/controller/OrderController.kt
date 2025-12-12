@@ -45,6 +45,7 @@ class OrderController(private val orderService: OrderService) {
         return ResponseEntity.noContent().build()
     }
 
+
     @GetMapping("/user/{userId}")
     fun getOrdersByUserId(@PathVariable userId: UUID): ResponseEntity<List<OrderDto>> {
         // ใช้ getOrdersByUserId ซึ่งมีการใช้ Repository method findAllByUserId
