@@ -1,6 +1,5 @@
-package com.demo.internkotlinspringbootdemo.service
+package com.demo.internkotlinspringbootdemo.dto
 
-import com.demo.internkotlinspringbootdemo.dto.AccountDto
 import com.demo.internkotlinspringbootdemo.entity.Account
 
 fun Account.toDto(): AccountDto {
